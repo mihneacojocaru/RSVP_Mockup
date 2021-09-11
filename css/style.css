@@ -337,4 +337,8 @@ template {
   display: none;
 }
 
+body {
+  background-color: red;
+}
+
 /*# sourceMappingURL=style.css.map */

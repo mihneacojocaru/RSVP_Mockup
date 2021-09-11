@@ -1,4 +1,16 @@
+//Variables
+//Mixins
+
 @import 'utilities/variables',  
         'utilities/mixins';
 
-@import 'base/reset';
+// Resets
+// Base
+
+@import 'base/reset',
+        'base/base';
+
+
+// Layout
+
+// Components
