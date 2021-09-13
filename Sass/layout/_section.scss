@@ -11,7 +11,9 @@
 
 .card{
     text-align: center;
+    margin: 7px;
     padding-top: 40px;
+    border: 1px solid $main-color3;
     border-radius: 5px;
     box-shadow: 3px 3px 5px black;
     width: 150px;
@@ -28,6 +30,10 @@
         padding: .580em .50em;
         color: $main-white;
     }
+
+    input{
+        max-width: 140px;
+    }
 }
 
 .card > * {
@@ -38,6 +44,7 @@
     background-color: $main-color;
     border: none;
     border-radius: 5px;
+    margin:0 5px;
 }
 
 .btnRemove{
@@ -47,5 +54,14 @@
 }
 
 .people-cards{
-    @include flexy;
+    @include flexy($disp:flex,$dir:null,$wrap:wrap,$just: space-evenly);
+    margin: 2rem 0;
+}
+
+.responded > *{
+    color: $main-color !important;
+}
+
+.responded{
+    border: 1px solid $main-color;
 }

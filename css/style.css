@@ -434,7 +434,9 @@ main {
 
 .card {
   text-align: center;
+  margin: 7px;
   padding-top: 40px;
+  border: 1px solid #343434;
   border-radius: 5px;
   box-shadow: 3px 3px 5px black;
   width: 150px;
@@ -457,6 +459,9 @@ main {
   padding: 0.58em 0.5em;
   color: #fff;
 }
+.card input {
+  max-width: 140px;
+}
 
 .card > * {
   padding: 10px 0;
@@ -466,6 +471,7 @@ main {
   background-color: #4cc2c4;
   border: none;
   border-radius: 5px;
+  margin: 0 5px;
 }
 
 .btnRemove {
@@ -476,6 +482,17 @@ main {
 
 .people-cards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+.responded > * {
+  color: #4cc2c4 !important;
+}
+
+.responded {
+  border: 1px solid #4cc2c4;
 }
 
 /*# sourceMappingURL=style.css.map */
