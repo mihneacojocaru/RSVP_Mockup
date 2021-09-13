@@ -1,0 +1,51 @@
+.people-list{
+    margin: 0 4em;
+}
+
+.invitees-header{
+    margin: 2em 0;
+    & h2{
+        margin: .5em 0;
+    }
+}
+
+.card{
+    text-align: center;
+    padding-top: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+    width: 150px;
+    min-height: 150px;
+
+    @include buttonEffect;
+
+    h3{
+        font-weight: bolder;
+        color: $main-color3;
+    }
+
+    button{
+        padding: .580em .50em;
+        color: $main-white;
+    }
+}
+
+.card > * {
+    padding: 10px 0;
+}
+
+.btnEdit{
+    background-color: $main-color;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnRemove{
+    background-color: $main-color2;
+    border: none;
+    border-radius: 5px;
+}
+
+.people-cards{
+    @include flexy;
+}

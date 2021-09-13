@@ -7,6 +7,20 @@
 
 }
 
+@mixin buttonEffect {
+
+    & button:hover{
+        background-color: $main-color3;
+        color: $main-white;
+        cursor: pointer;
+    }
+
+    & button:active{
+        background-color: $main-color2;
+        color: $main-white;
+    }
+}
+
 @mixin mq($break) {
 
     $value:map-get($map: $breakpoints, $key:$break );
