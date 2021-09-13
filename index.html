@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>RSVP</h1>
+        <h4>MyCodeSchool App</h4>
+        <h6>SASS Reissue</h6>
+    </header>
+    <main>
+        <section class="entry-form">
+            <input type="text" placeholder="Invite Someone" id="addPerson">
+
+            <button id="btnSubmit">Submit</button>
+        </section>
+        <section class="people-list">
+            <div class="invitees-header">
+                <h2>Invitees</h2>
+                <label for="hide-people">Hide those who haven't responded</label>
+                <input type="checkbox" name="hide-people" id="hidePeople">
+            </div>
+            <div class="people-cards">
+                <div class="card">
+                    <h3 class="card-header">John Doe</h3>
+                    <label for="confirmed" class="confirmed-label">Confirmed</label>
+                    <input type="checkbox" name="confirmed" class="confirmed-check">
+                    <div class="card-buttons">
+                        <button class="btnEdit">Edit</button>
+                        <button class="btnRemove">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
